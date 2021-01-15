@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login & add user Form Transition</title>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="./css/loginStyle.css">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="cont">
+    <div class="form sign-in">
+      <h2>Log in</h2>
+      <label>
+        <span>Username</span>
+        <input id="UserName"  type="UserName" name="email">
+      </label>
+      <label>
+        <span>Password</span>
+        <input  id="password"  type="password" name="password">
+      </label>
+    
+    </div>
+
+    <div class="sub-cont">
+      <div class="img">
+        <div class="img-text m-up">
+          <h2>Welcome</h2>
+          <p>Enter ur name and pass to Manege our pharmacy</p>
+        </div>
+        <div class="img-text m-in">
+          <h2>Welcome admin</h2>
+          <p>U can add our staff now</p>
+        </div>
+        <div id="submit" class="img-btn">
+          <span  id="submit2" class="m-up">Login</span>
+          <span class="m-in"> login bage</span>
+        </div>
+      </div>
+      <div class="form sign-up">
+        <h2>Add_User</h2>
+        <label>
+          <span>Name</span>
+          <input id="newUserName" type="text">
+        </label>
+        <label>
+          <span>Password</span>
+          <input id="newUserPass" type="password">
+        </label>
+        <label>
+          <span>Confirm Password</span>
+          <input id="conNewUserPass"  type="password">
+        </label>
+        <button id="add"  type="submit" class="submit">Add User</button>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript" src="./js/loginScript.js"></script>
+<script>
+</script>
+</body>
+</html>

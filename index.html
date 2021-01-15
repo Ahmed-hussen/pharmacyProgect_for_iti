@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Boxicons -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <title>Ahmed_Hussein- Ecommerce</title>
+  <style>
+    #container2 {
+      margin: 0px auto;
+      width: 1000px;
+      height: 400px;
+      border: 10px rgb(75, 77, 238) solid;
+    }
+
+    #videoElement {
+      width: 500px;
+      height: 400px;
+      background-color: rgb(0, 163, 238);
+    }
+
+    #showscreenshot {
+      width: 500px;
+      height: 400px;
+      background-color: rgb(0, 163, 238);
+
+
+
+
+    }
+
+    .camerabtn {
+      display: inline-block;
+      padding: 9px 17px;
+      font-size: 12px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #13d7fa;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px rgb(50, 83, 110);
+      margin: 15px 5px;
+    }
+
+    .camerabtn:hover {
+      background: rgb(76, 78, 230);
+      color: rgb(24, 7, 122);
+      box-shadow: 0 0 5px #0212f8,
+        0 0 25px #0212f8,
+        0 0 50px #0212f8,
+        0 0 200px #0212f8;
+
+    }
+
+
+
+    .camerabtn:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+  </style>
+
+  <style type="text/css">
+    #sample {
+      border: 1px dotted #666;
+      text-align: center;
+    }
+
+    #sample h2 {
+      text-align: center;
+    }
+
+    #sample p {
+      text-align: center;
+      padding: .4em 3em 0em;
+    }
+
+    #my-form #align {
+      box-sizing: border-box;
+      width: 96%;
+      text-align: center;
+      margin: 0 2%;
+      padding: 2em;
+    }
+
+    #my-form .data-entry {
+      padding: .5em 8%;
+    }
+
+    #my-form textarea {
+      padding: .1em 8%;
+    }
+
+    #my-form p {
+      margin: .1em 0;
+      text-align: center;
+    }
+
+    #my-form select {
+      margin-bottom: 1em;
+    }
+
+    #my-form select {
+      margin-bottom: 1em;
+      font-size: 95%;
+      padding: .1em .5em;
+    }
+
+    #my-form .button {
+      width: 80px;
+      height: 30px;
+      font-size: 110%;
+      margin: .4em;
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <!-- NAVIGATION -->
+    <nav class="nav container">
+      <div class="navigation d-flex">
+        <div class="hamburger">
+          <i class="bx bx-menu"></i>
+        </div>
+        <div class="logo">
+          <img class="logo_image" src="./images/logo.png" alt="" />
+        </div>
+
+        <div class="menu">
+          <div class="top">
+            <span class="close">close <i class="bx bx-x"></i></span>
+          </div>
+
+          <ul class="nav-list d-flex">
+            <li class="nav-item">
+              <a href="#move0" class="nav-link">Add Medicine</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Buy&sell" class="nav-link">buy Medicine</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Buy&sell" class="nav-link"> sell Medicine</a>
+            </li>
+            <li class="nav-item">
+              <a href="#move3" class="nav-link">show stock</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">show stock</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="icons d-flex">
+          <div><i class="bx bx-search"></i></div>
+         
+          <div>
+            <i class="bx bx-shopping-bag"></i>
+            <span class="align-center">0</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="hero-content d-flex container">
+        <div class="left">
+          
+          <h1 class="title">
+            you can
+            <span class="color">puy <br />
+              or Sell</span>
+            Medicane <br />
+            on our pharmacy
+          </h1>
+
+
+          <a href="#move0" class="btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Add Medicane</a>
+        </div>
+
+        <div class="right">
+          <img src="./images/backg.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--  -->
+  <section class="section services">
+    <div class="service-center container">
+
+
+
+
+
+
+
+
+
+
+      <!------------------add product form----------------------->
+
+      <div id="move0" class="container">
+        <div id="container">
+          <div class="title">
+            <h1><span>Add</span>Medicane</h1>
+          </div>
+
+          <!--	<img id="showscreenshotimg" /> -->
+          <button class="camerabtn" onclick="stop();"><i class='bx bxs-camera-off'></i></i></button>
+          <button class="camerabtn" id="myFileInput" onclick="takescreenshot();"> <i
+              class='bx bxs-camera'></i></button>
+          <button class="camerabtn" onclick="Open();">open Camera</button>
+
+        </div>
+
+        <div class="row">
+          <form>
+            <fieldset>
+              <legend>Medicine photo </legend>
+              <video autoplay="true" id="videoElement">
+
+              </video>
+
+
+              <canvas id="showscreenshot"></canvas>
+              <!--	<input type="button" class="btn btn-success"  id="photo" value="Take Photo +"> -->
+              <!--  <input type="file"   >  -->
+
+              <legend>Medicine Name</legend>
+              <input type="text" class="form-control" name="" id="item">
+
+
+              <legend>Quantity</legend>
+              <input type="number" class="form-control" id="quantity" name="">
+              <br>
+              <button type="button" id="insert" class="btn btn-success">Insert</button>
+
+              <button type="button" id="create" class="btn btn-success">Create Table</button>
+
+              <button type="button" id="remove" class="btn btn-danger">Delete Table</button>
+
+              <button type="button" id="list" class="btn btn-success">Fetch Record</button>
+
+            </fieldset>
+          </form>
+
+          <hr>
+          <!-- <h4>Record</h4>  -->
+          <table class="table table-bordered table-hover" id="itemlist">
+
+
+
+          </table>
+
+
+
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </section>
+
+  <!-- New Arrivals -->
+
+  <!-- puy medecine-------------------------------------------------------------->
+  <section id="Buy&sell" class="section">
+    <div class="title">
+      <h1><span>Buy &</span> Sell</h1>
+    </div>
+    <div class="product-center container">
+
+
+
+
+
+
+
+      <div class="service-center container" id="sample">
+        <!-- <h2>Contact Form</h2> -->
+
+        <form id="my-form" action="/cgi-bin/umbrella.pl" method="post">
+          <div id="align">
+
+            <label for="name">Customer Name</label><br />
+            <span><input class="form-control" id="SupplierName" type="text" name="name" id="SupplierName"
+                class="data-entry" /></span><br /><br />
+
+            <label for="name">Quantity</label><br />
+            <span><input class="form-control" id="Quantity" type="text" name="name" class="data-entry" /></span><br />
+            <br />
+
+            <p>Product Name</p>
+            <select   style="width: 175px ;height: 50px;"  class="btn btn-success btn-lg" id="ProductName" name="productName">
+
+
+            </select><br />
+
+           <!--  <label for="birthday">Date:</label>
+           <input id="Date:" type="date" id="birthday" name="birthday">-->
+
+            <br />
+
+            <br />
+            <br />
+            <span><input class="btn btn-danger" type="reset" class="button" value="RESET" />
+              <input class="btn btn-success" id="buyMed" type="button" class="button" value="buy" />
+              <input class="btn btn-success" id="sell" type="button" class="button" value="Sell" /></span><br />
+          </div>
+          <!--end div align-->
+        </form>
+      </div>
+      <!--end div sample-->
+
+    </div>
+
+
+
+
+  <!-- Footer -->
+  <footer id="footer" class="section footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-center">
+          <h3>EXTRAS</h3>
+          <a href="#">Brands</a>
+          <a href="#">Gift Certificates</a>
+          <a href="#">Affiliate</a>
+          <a href="#">Specials</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div class="footer-center">
+          <h3>INFORMATION</h3>
+          <a href="#">About Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div class="footer-center">
+          <h3>MY ACCOUNT</h3>
+          <a href="#">My Account</a>
+          <a href="#">Order History</a>
+          <a href="#">Wish List</a>
+          <a href="#">blogletter</a>
+          <a href="#">Returns</a>
+        </div>
+        <div class="footer-center">
+          <h3>CONTACT US</h3>
+          <div>
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            moharem bek alexandrea
+          </div>
+          <div>
+            <span>
+              <i class="far fa-envelope"></i>
+            </span>
+              ahmedhussein@gmail.com
+          </div>
+          <div>
+            <span>
+              <i class="fas fa-phone"></i>
+            </span>
+            01210327399
+          </div>
+          <div>
+            <span>
+              <i class="far fa-paper-plane"></i>
+            </span>
+           ITi
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="js/addMed.js"></script>
+
+  <script src="js/index.js"></script>
+  <script src="js/buyMed.js"></script>
+  <script src="js/sell _tem.js"></script>
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+
+</html>
